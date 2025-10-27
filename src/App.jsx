@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { AboutMe, Gallery } from "./hero";
-
+import "./App.css";
 function App() {
   const [deferredPrompt, setDeferredPrompt] = useState(null);
   const [showInstallButton, setShowInstallButton] = useState(false);
@@ -42,7 +42,7 @@ function App() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <h1 className="text-3xl font-bold mb-6">Your Resume App</h1>
+      
       {showInstallButton && (
         <button
           onClick={handleInstallClick}
